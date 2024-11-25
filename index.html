@@ -1,37 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<head>
-    <title>Getting Clients IP</title>
-    <style>
-        p,
-        h1 {
-            color: green;
-        }
-    </style>
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta name="description" content="My Websites | One of the first web development projects by me.">
+          <meta itemprop="name" content="ANIKK Portfolio">
+          <meta itemprop="description" content="ANIKK Portfolio | One of the first web development projects by me.">
+          <meta itemprop="image" content="https://te.legra.ph/file/b7b808ffcf4023ae3957c.jpg">
+          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+          <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="src/style.css">
+          <title> I ᴀᴍ Anik (@An.ik)</title>
+          <link rel="icon" href="https://vectorified.com/images/attack-on-titan-icon-31.png" type="image/x-icon">
+          <meta content="DAXX Portfolio" property="og:site_name">
+          <meta property="og:type" content="Anik_Topi">
+          <meta content="https://anikalwayspro.github.io/" property="og:url">
+          <meta content="ANIK (@Anik_x_Pro)" property="og:title">
+          <meta content="" property="og:image">
+          <meta content="Anik's Portfolio | One of the first web development projects by Anikk." property="og:description">
+     </head>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<body id="body" class="dark" oncontextmenu="return false">
+     <div class="loader" id="loader">
+          <h1 data-value="ANIKK" id="loader-text">Click me</h1>
+     </div>
+     <div id="particles-js"></div>
+     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+     <div class="wrapper">
+          <div class="toggle">
+               <input class="toggle-input" type="checkbox" />
+               <div class="toggle-bg"></div>
+               <div class="toggle-switch">
+                    <div class="toggle-switch-figure"></div>
+                    <div class="toggle-switch-figureAlt"></div>
+               </div>
+          </div>
+     </div>
 
-    <script>
-        /* Add "https://api.ipify.org?format=json" to 
-        get the IP Address of user*/
-        $(document).ready(() => {
-            $.getJSON("https://api.ipify.org?format=json", function(data) {
-                // Displaying IP address on screen
-                $("#gfg").html(data.ip);
-                // Send IP address to server for saving
-                $.post("save_ip.php", { ip: data.ip });
-            })
-        });
-    </script>
-</head>
+     <div class="modal">
+          <img src="https://te.legra.ph/file/b7b808ffcf4023ae3957c.jpg" alt="">
+          <div class="close"></div>
+     </div>
 
-<body>
-    <center>
-        <h1>DEV MASTER OP :)</h1>
-        <!-- <h3>Public IP Address of user is:</h3>
-        <p id="gfg"></p> -->
-    </center>
+     <div id="container" class="container">
+          <input type="checkbox" name="" id="check">
+          <div class="card">
+               <div class="sidebar" id="sidebar">
+                    <a class="active" href="https://github.com/anikalwayspro" target="_blank" rel="noopener noreferrer">Github</a>
+                    <a class="active" href="https://telegram.dog/anik_x_pro">Telegram</a>
+                    <a class="active" href="https://instagram.com/_._.anik_._">Instagram</a>
+               </div>
+               <div class="header" onclick="toggle()">
+                    <label for="check" class="checkbtn" id="chkbtn">
+                         <div class="hamburger-menu">
+                              <div class="center"></div>
+                         </div>
+                    </label>
+                    <a href="mailto: anikxpro00@outlook.con" class="mail">
+                         <i class="far fa-envelope"></i>
+                    </a>
+                    <div class="main">
+                         <div class="image">
+                              <div class="hover">
+                                   <i class="fas fa-camera fa-2x"></i>
+                              </div>
+                         </div>
+                         <h3 class="name">Anikk 🤕</h3>
+                         <h3 class="sub-name">@CBSEIANS 😤</h3>
+                    </div>
+               </div>
+
+               <div class="content">
+                    <div class="left">
+                         <div class="about-container">
+                              <h3 class="title">Aʙᴏᴜᴛ</h3>
+                              <p class="text">~ Tᴇʟᴇɢʀᴀᴍ ʙᴏᴛ creator | Bᴜɢ Bᴏᴜɴᴛɪɴɢ ~</p>
+                              <p class="text">• Pʏᴛʜᴏɴ | Pʏʀᴏɢʀᴀᴍ | Hᴛᴍʟ| Bgmi •</p>
+                         </div>
+                         <div class="icons-container">
+                              <a href="https://github.com/anikalwayspro" class="icon">
+                                   <i class="fab fa-github"></i>
+                              </a>
+                              <a href="https://telegram.dog/anik_x_pro" class="icon">
+                                   <i class="fab fa-telegram"></i>
+                              </a>
+                              <a href="https://instagram.com/_._.anik_._" class="icon">
+                                   <i class="fab fa-instagram"></i>
+                              </a>
+                         </div>
+                         <div class="buttons-wrap">
+                              <div class="follow-wrap">
+                                   <a href="https://instagram.com/_._.anik_._" class="follow">Follow</a>
+                              </div>
+                              <div class="share-wrap">
+                                   <a href="https://github.com/anikalwayspro" class="share">More</a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+     </div>
+     
+     <script>
+          document.onkeydown = function (e) {
+               if (event.keyCode == 123) {
+                    return false;
+               }
+               if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                    return false;
+               }
+               if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                    return false;
+               }
+               if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                    return false;
+               }
+               if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                    return false;
+               }
+          }
+     </script>
+     <script src="src/app.js"></script>
+     <script src="/src/contact-form.js" id="contactform" error_text="" success_text="" disable_waittime="true" form_worker_url="https://contactform.cfform.workers.dev/"></script>
 </body>
-
 </html>
