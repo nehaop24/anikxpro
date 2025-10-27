@@ -4,126 +4,214 @@
      <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <meta name="description" content="My Websites | One of the first web development projects by me.">
-          <meta itemprop="name" content="ANIKK Portfolio">
-          <meta itemprop="description" content="ANIKK Portfolio | One of the first web development projects by me.">
+          <meta name="description" content="TelegramToYT Bot - Seamlessly upload videos from Telegram to YouTube using secure API integration.">
+          <meta itemprop="name" content="TelegramToYT Bot">
+          <meta itemprop="description" content="TelegramToYT Bot - Seamlessly upload videos from Telegram to YouTube using secure API integration.">
           <meta itemprop="image" content="https://te.legra.ph/file/b7b808ffcf4023ae3957c.jpg">
           <meta http-equiv="X-UA-Compatible" content="ie=edge">
-          <script src="https://kit.fontawesome.com/a81368914c.js"></script>
-          <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-          <link rel="stylesheet" href="src/style.css">
-          <title> I ᴀᴍ Anik (@An.ik)</title>
+          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+          <title>TelegramToYT Bot - Upload Videos from Telegram to YouTube</title>
           <link rel="icon" href="https://vectorified.com/images/attack-on-titan-icon-31.png" type="image/x-icon">
-          <meta content="DAXX Portfolio" property="og:site_name">
-          <meta property="og:type" content="Anik_Topi">
-          <meta content="https://anikalwayspro.github.io/" property="og:url">
-          <meta content="ANIK (@Anik_x_Pro)" property="og:title">
-          <meta content="" property="og:image">
-          <meta content="Anik's Portfolio | One of the first web development projects by Anikk." property="og:description">
+          <meta content="TelegramToYT Bot" property="og:site_name">
+          <meta property="og:type" content="website">
+          <meta content="https://anikxpro.vercel.app/" property="og:url">
+          <meta content="TelegramToYT Bot - Upload Videos from Telegram to YouTube" property="og:title">
+          <meta content="https://te.legra.ph/file/b7b808ffcf4023ae3957c.jpg" property="og:image">
+          <meta content="Seamlessly upload videos from Telegram to YouTube using secure API integration." property="og:description">
+          <style>
+               * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+               }
+               
+               body {
+                    font-family: 'Inter', sans-serif;
+                    line-height: 1.6;
+                    color: #333;
+                    background: #f8fafc;
+               }
+               
+               .container {
+                    max-width: 800px;
+                    margin: 0 auto;
+                    padding: 40px 20px;
+               }
+               
+               .header {
+                    text-align: center;
+                    margin-bottom: 40px;
+                    background: white;
+                    padding: 40px;
+                    border-radius: 12px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+               }
+               
+               .logo {
+                    width: 80px;
+                    height: 80px;
+                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                    border-radius: 20px;
+                    margin: 0 auto 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 36px;
+                    color: white;
+                    font-weight: 700;
+               }
+               
+               h1 {
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                    color: #1a202c;
+               }
+               
+               .subtitle {
+                    font-size: 1.2rem;
+                    color: #666;
+                    margin-bottom: 30px;
+               }
+               
+               .section {
+                    background: white;
+                    padding: 30px;
+                    margin-bottom: 30px;
+                    border-radius: 12px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+               }
+               
+               h2 {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    margin-bottom: 15px;
+                    color: #2d3748;
+               }
+               
+               p {
+                    margin-bottom: 15px;
+                    color: #4a5568;
+               }
+               
+               ul {
+                    padding-left: 20px;
+                    margin-bottom: 15px;
+               }
+               
+               li {
+                    margin-bottom: 8px;
+                    color: #4a5568;
+               }
+               
+               .privacy-link {
+                    display: inline-block;
+                    background: #4299e1;
+                    color: white;
+                    padding: 12px 24px;
+                    text-decoration: none;
+                    border-radius: 8px;
+                    font-weight: 500;
+                    transition: background 0.3s ease;
+               }
+               
+               .privacy-link:hover {
+                    background: #3182ce;
+               }
+               
+               .footer {
+                    text-align: center;
+                    padding: 30px;
+                    color: #666;
+                    border-top: 1px solid #e2e8f0;
+                    margin-top: 40px;
+               }
+               
+               .contact-info {
+                    background: #f7fafc;
+                    padding: 20px;
+                    border-radius: 8px;
+                    border-left: 4px solid #4299e1;
+               }
+               
+               .highlight {
+                    background: #e6fffa;
+                    padding: 20px;
+                    border-radius: 8px;
+                    border-left: 4px solid #38b2ac;
+               }
+          </style>
      </head>
 
-<body id="body" class="dark" oncontextmenu="return false">
-     <div class="loader" id="loader">
-          <h1 data-value="ANIKK" id="loader-text">Click me</h1>
-     </div>
-     <div id="particles-js"></div>
-     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-     <div class="wrapper">
-          <div class="toggle">
-               <input class="toggle-input" type="checkbox" />
-               <div class="toggle-bg"></div>
-               <div class="toggle-switch">
-                    <div class="toggle-switch-figure"></div>
-                    <div class="toggle-switch-figureAlt"></div>
-               </div>
-          </div>
-     </div>
+<body>
+     <div class="container">
+          <header class="header">
+               <div class="logo">TY</div>
+               <h1>TelegramToYT Bot</h1>
+               <p class="subtitle">Seamlessly upload videos from Telegram to YouTube</p>
+          </header>
 
-     <div class="modal">
-          <img src="https://te.legra.ph/file/b7b808ffcf4023ae3957c.jpg" alt="">
-          <div class="close"></div>
-     </div>
+          <section class="section">
+               <h2>🤖 About Our App</h2>
+               <p>TelegramToYT Bot is a specialized automation tool that allows users to upload videos from Telegram channels and chats directly to YouTube using secure API integration.</p>
+               
+               <div class="highlight">
+                    <strong>Key Features:</strong>
+                    <ul>
+                         <li>Secure Telegram bot integration</li>
+                         <li>Direct YouTube API connectivity</li>
+                         <li>Automated video processing and upload</li>
+                         <li>User-friendly command interface</li>
+                         <li>Metadata preservation and customization</li>
+                    </ul>
+               </div>
+          </section>
 
-     <div id="container" class="container">
-          <input type="checkbox" name="" id="check">
-          <div class="card">
-               <div class="sidebar" id="sidebar">
-                    <a class="active" href="https://github.com/anikalwayspro" target="_blank" rel="noopener noreferrer">Github</a>
-                    <a class="active" href="https://telegram.dog/anik_x_pro">Telegram</a>
-                    <a class="active" href="https://instagram.com/_._.anik_._">Instagram</a>
+          <section class="section">
+               <h2>🔒 Data Usage & Privacy</h2>
+               <p>We are committed to protecting your privacy and data security. Our application:</p>
+               <ul>
+                    <li><strong>Video Content:</strong> We temporarily process videos to facilitate upload to YouTube. Videos are not stored on our servers after processing.</li>
+                    <li><strong>Telegram Data:</strong> We only access videos you explicitly choose to upload through our bot commands.</li>
+                    <li><strong>YouTube Integration:</strong> We use YouTube API to upload videos to your authorized YouTube channel with your explicit permission.</li>
+                    <li><strong>Authentication:</strong> All API connections use secure OAuth 2.0 protocols.</li>
+                    <li><strong>Data Retention:</strong> We do not permanently store your video content or personal data.</li>
+               </ul>
+               
+               <div class="contact-info">
+                    <strong>Purpose of Data Collection:</strong> We collect and process video data solely to enable the upload functionality from Telegram to YouTube as requested by users through bot commands.
                </div>
-               <div class="header" onclick="toggle()">
-                    <label for="check" class="checkbtn" id="chkbtn">
-                         <div class="hamburger-menu">
-                              <div class="center"></div>
-                         </div>
-                    </label>
-                    <a href="mailto: anikxpro00@outlook.con" class="mail">
-                         <i class="far fa-envelope"></i>
-                    </a>
-                    <div class="main">
-                         <div class="image">
-                              <div class="hover">
-                                   <i class="fas fa-camera fa-2x"></i>
-                              </div>
-                         </div>
-                         <h3 class="name">Anikk 🤕</h3>
-                         <h3 class="sub-name">@CBSEIANS 😤</h3>
-                    </div>
-               </div>
+          </section>
 
-               <div class="content">
-                    <div class="left">
-                         <div class="about-container">
-                              <h3 class="title">Aʙᴏᴜᴛ</h3>
-                              <p class="text">~ Tᴇʟᴇɢʀᴀᴍ ʙᴏᴛ creator | Bᴜɢ Bᴏᴜɴᴛɪɴɢ ~</p>
-                              <p class="text">• Pʏᴛʜᴏɴ | Pʏʀᴏɢʀᴀᴍ | Hᴛᴍʟ| Bgmi •</p>
-                         </div>
-                         <div class="icons-container">
-                              <a href="https://github.com/anikalwayspro" class="icon">
-                                   <i class="fab fa-github"></i>
-                              </a>
-                              <a href="https://telegram.dog/anik_x_pro" class="icon">
-                                   <i class="fab fa-telegram"></i>
-                              </a>
-                              <a href="https://instagram.com/_._.anik_._" class="icon">
-                                   <i class="fab fa-instagram"></i>
-                              </a>
-                         </div>
-                         <div class="buttons-wrap">
-                              <div class="follow-wrap">
-                                   <a href="https://instagram.com/_._.anik_._" class="follow">Follow</a>
-                              </div>
-                              <div class="share-wrap">
-                                   <a href="https://github.com/anikalwayspro" class="share">More</a>
-                              </div>
-                         </div>
-                    </div>
+          <section class="section">
+               <h2>🛡️ How It Works</h2>
+               <p>Our bot operates with a simple and secure process:</p>
+               <ol>
+                    <li><strong>Authorization:</strong> Users authorize both Telegram bot access and YouTube channel permissions</li>
+                    <li><strong>Video Selection:</strong> Users send video upload commands through our Telegram bot</li>
+                    <li><strong>Processing:</strong> Videos are securely processed and formatted for YouTube upload</li>
+                    <li><strong>Upload:</strong> Videos are uploaded to the user's YouTube channel with specified metadata</li>
+                    <li><strong>Confirmation:</strong> Users receive confirmation of successful upload</li>
+               </ol>
+          </section>
+
+          <section class="section">
+               <h2>📧 Contact & Support</h2>
+               <div class="contact-info">
+                    <p><strong>Developer:</strong> AnikX Pro</p>
+                    <p><strong>Email:</strong> <a href="mailto:anikxpro00@gmail.com">anikxpro00@gmail.com</a></p>
+                    <p><strong>Telegram:</strong> <a href="https://telegram.dog/anik_x_pro" target="_blank" rel="noopener">@anik_x_pro</a></p>
                </div>
-          </div>
-     </div>
-     </div>
-     
-     <script>
-          document.onkeydown = function (e) {
-               if (event.keyCode == 123) {
-                    return false;
-               }
-               if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-                    return false;
-               }
-               if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-                    return false;
-               }
-               if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-                    return false;
-               }
-               if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-                    return false;
-               }
-          }
-     </script>
-     <script src="src/app.js"></script>
-     <script src="/src/contact-form.js" id="contactform" error_text="" success_text="" disable_waittime="true" form_worker_url="https://contactform.cfform.workers.dev/"></script>
-</body>
+          </section>
+
+          <section class="section">
+               <h2>📄 Privacy Policy</h2>
+               <p>We take your privacy seriously. Please review our comprehensive privacy policy to understand how we handle your data.</p>
+               <a href="/privacy.html" class="privacy-link">View Privacy Policy</a>
+          </section>
+
+          <footer class="footer">
+               <p>&copy; 2025 TelegramToYT Bot by AnikX Pro. All rights reserved.</p>
+               <p>This application is independently developed and not affiliated with Telegram or YouTube.</p>
+          </footer>
 </html>
